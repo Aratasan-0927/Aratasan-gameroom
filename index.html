@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Aratasanのゲーム部屋</title>
+<style>
+body {
+  background: linear-gradient(#87ceeb, #228b22);
+  font-family: sans-serif;
+  margin: 0;
+  text-align: center;
+}
+header img {
+  width: 80%;
+  max-width: 600px;
+  margin-top: 20px;
+}
+.card {
+  background: #111;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 0 15px #00eaff;
+  color: white;
+}
+button {
+  background:#00eaff;
+  border:none;
+  padding:12px 25px;
+  font-size:18px;
+  border-radius:10px;
+  cursor:pointer;
+}
+button:hover { background:#00aaff; }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="a_digital_logo_in_minecraft_inspired_blocky_pixel.png" alt="Aratasanのゲーム部屋 ロゴ">
+</header>
+
+<div class="card">
+<h2>🟦 Roblox</h2>
+<p>ブレインロット交換チャレンジ！最弱から最強を目指す遊び！</p>
+<button onclick="location.href='roblox.html'">Robloxページ</button>
+</div>
+
+<div class="card">
+<h2>🟩 Minecraft</h2>
+<p>統合版RPG制作中！ゾンビ討伐ゲーム！</p>
+<button onclick="location.href='minecraft.html'">Minecraftページ</button>
+</div>
+
+<div class="card">
+<h2>🎲 その他ゲーム</h2>
+<p>Scratchなど色々なゲーム！</p>
+<button onclick="location.href='others.html'">その他</button>
+</div>
+
+<div class="card">
+<h2>👤 プロフィール</h2>
+<p>名前：Aratasan<br>ゲーム制作・コマンドが好き！</p>
+<button onclick="location.href='profile.html'">プロフィールページ</button>
+</div>
+
+<!-- コメント欄（トップページのみ） -->
+<div id="disqus_thread"></div>
+<script>
+(function() {
+var d = document, s = d.createElement('script');
+s.src = 'https://あなたのサイト名.disqus.com/embed.js'; // ← Disqusサイト名に書き換える
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>コメントを見るにはJavaScriptを有効にしてください。</noscript>
+
+</body>
+</html>
